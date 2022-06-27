@@ -32,16 +32,13 @@ const UseInput = (validateValue) => {
         dispatch({
             type:'input',
             value:event.target.value
-        })
-      
+        })  
       };
-
     const inputBlurHandler = (event) => {
         dispatch({
             type:'blur',
         })
   };
-
     const reset = () =>{
      dispatch({
         type:'reset'
